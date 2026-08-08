@@ -1,10 +1,8 @@
 FROM n8nio/n8n:latest
 
 ENV N8N_PORT=5678
+ENV N8N_LISTEN_ADDRESS=0.0.0.0
 ENV NODE_ENV=production
-ENV GENERIC_TIMEZONE=America/Mexico_City
+ENV GENERIC_TIMEZONE=America/Lima
 
 EXPOSE 5678
-
-ENTRYPOINT []
-CMD ["n8n", "start"]
